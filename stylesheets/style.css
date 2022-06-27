@@ -1,0 +1,96 @@
+/* font management */
+@font-face {
+    font-family: Meslo;
+    src: url(../resources/MesloLGM.ttf);
+}
+
+@font-face {
+    font-family: MesloBold;
+    src: url(../resources/MesloLGMBold.ttf);
+}
+
+* {
+    font-family: Meslo;
+}
+
+.bold {
+    font-family: MesloBold;
+    text-shadow: currentColor 0px 0px 20px;
+}
+
+.small {
+    font-size: 0.5rem;
+}
+
+
+
+/* coloring */
+:root {
+    --fore: #dfbf8e;
+    --back: #282828;
+    --black: #665c54;
+    --red: #ea6962;
+    --green: #a9b665;
+    --yellow: #e78a4e;
+    --blue: #7daea3;
+    --magenta: #d3869b;
+    --cyan: #89b482;
+    --white: #dfbf8e;
+}
+
+body {
+    background-color: var(--back);
+    color: var(--fore);
+}
+
+.hi {
+    color: var(--yellow);
+}
+
+
+
+/* wrapper for content center */
+body {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#main {
+    max-width: 75ch;
+}
+
+
+
+/* Actual content adjustments */
+.row {
+    margin: 0;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--fore) !important;
+}
+
+#link-github {
+    color: var(--cyan);
+}
+
+#link-discord {
+    color: var(--magenta);
+}
+
+#link-codeforces {
+    color: var(--red);
+}
